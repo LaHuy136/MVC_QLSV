@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sinh viên</title>
+</head>
+<body>
+    
+</body>
+<?php
+echo '<h2 style="text-align: center">Danh sách sinh viên:</h2>';
+if (!empty($studentList)) {
+    echo '<table border = "1" width ="100%" align="center">';
+    echo '<tr><th>ID sinh viên</th><th>Tên sinh viên</th><th>Tuổi</th><th>Trường</th><th></th></tr>';
+    foreach ($studentList as $i => $student) {
+        echo "<tr>";
+        echo "<td>" . $i . "</td>";
+        echo "<td>" . $student->name . "</td>";
+        echo "<td>" . $student->age . "</td>";
+        echo "<td>" . $student->university . "</td>";
+        echo "<td><a href='?del=" . $student->id . "'> Xóa </a></td>";
+        echo "</tr>";
+    }
+    echo '</table>';
+}
+?>
+</br>
+<p style="text-align: center"><a href="../index.php">Trang chủ</a></p>
+</html>

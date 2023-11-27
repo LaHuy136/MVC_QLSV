@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form-container {
+        max-width: 660px;
+        max-height: 500px;
+        padding: 20px;
+        margin: 30px auto 0 auto;
+    }
+
+    .form__row {
+        padding: 8px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form__label {
+        min-width: 140px;
+        margin-top: 7px;
+    }
+
+    .form__input {
+        padding: 5px;
+        margin-left: 10px;
+    }
+
+    .form__button {
+        display: flex;
+        padding: 8px;
+        margin-left: 25px;
+        background-color: #3b91d4;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .form__button:hover {
+        color: #fff;
+        background-color: #04528f;
+    }
+
+    .form-container h2,
+    .form-container p {
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="form-container">
+        <form action="" method="post">
+            <h2>Tìm kiếm thông tin sinh viên</h2>
+            <div class="form__row">
+                <label class="form__label" for="lbUni"><b>Trường</b></label>
+                <select name="fields">
+                    <option value="ID">ID</option>
+                    <option value="Name">Tên</option>
+                    <option value="Age">Tuổi</option>
+                    <option value="University">Trường</option>
+                </select>
+            </div>
+            <div class="form__row">
+                <label class="form__label" for="txtInfor"><b>Nhập thông tin tìm kiếm</b></label>
+                <input class="form__input" name="txtInfor" type="text" required>
+            </div>
+            <div class="form__row">
+                <input class="form__button" type="submit" value="Tìm kiếm" name="find">
+            </div>
+        </form>
+        <p><a href="../index.php">Trang chủ</a></p>
+    </div>
+</body>
+</html>

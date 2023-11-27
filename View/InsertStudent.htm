@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form chèn</title>
+</head>
+<style>
+    .form-container {
+        max-width: 660px;
+        max-height: 500px;
+        padding: 20px;
+        margin: 30px auto 0 auto;
+    }
+
+    .form__row {
+        padding: 8px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form__label {
+        min-width: 110px;
+        margin-top: 7px;
+    }
+
+    .form__input {
+        flex: 1;
+        padding: 5px;
+    }
+
+    .form__button {
+        display: flex;
+        padding: 12px;
+        margin-left: 25px;
+        background-color: #3b91d4;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .form__button:hover {
+        color: #fff;
+        background-color: #04528f;
+    }
+
+    .form-container h2,
+    .form-container p {
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="form-container">
+        <form action="" method="post">
+            <h2>Thêm sinh viên</h2>
+            <div class="form__row">
+                <label class="form__label" for="txtID"><b>Mã sinh viên:</b></label>
+                <input class="form__input" size="20" name="txtID" type="text" placeholder="Nhập ID" required>
+            </div>
+            <div class="form__row">
+                <label class="form__label" for="txtName"><b>Tên sinh viên:</b></label>
+                <input class="form__input" name="txtName" type="text" placeholder="Nhập tên" required>
+            </div>
+            <div class="form__row">
+                <label class="form__label" for="txtAge"><b>Tuổi:</b></label>
+                <input class="form__input" name="txtAge" type="text" placeholder="Nhập tuổi" required>
+            </div>
+            <div class="form__row">
+                <label class="form__label" for="txtUni"><b>Trường:</b></label>
+                <input class="form__input" name="txtUni" type="text" placeholder="Nhập trường" required>
+            </div>
+            <div class="form__row">
+                <input class="form__button" type="submit" value="Thêm" name="submit">
+                <input class="form__button" type="reset" for="reset" value="Nhập lại">
+            </div>
+        </form>
+        <p><a href="../index.php">Trang chủ</a></p>
+    </div>
+</body>
+</html>

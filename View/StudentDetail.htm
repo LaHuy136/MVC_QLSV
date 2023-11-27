@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sinh viên</title>
+</head>
+
+<body>
+    <h2 style="text-align: center">Chi tiết sinh viên:</h2>
+    <?php
+    echo '<table border="1" width="100%" align="center">';
+    echo '<th>Tên sinh viên</th><th>Tuổi</th><th>Trường</th>';
+    echo '<tr>
+            <td>' . $studentDetail->name . '</td>
+            <td>' . $studentDetail->age . '</td>
+            <td>' . $studentDetail->university . '</td>
+        </tr>';
+    echo '</table>';
+    ?>
+    <p style="text-align: center"><a href="javascript:history.back()">Quay lại</a></p>
+</body>
+
+</html>
